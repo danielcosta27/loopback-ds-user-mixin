@@ -13,7 +13,7 @@ export default (Model, bootOptions = {}) => {
     const options = Object.assign({
         createdBy: 'createdBy',
         updatedBy: 'updatedBy',
-        required: true,
+        required: false,
         validateUpsert: false, // default to turning validation off
         silenceWarnings: false,
         dsName: null
