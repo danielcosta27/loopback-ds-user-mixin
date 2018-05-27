@@ -1,5 +1,5 @@
 import { deprecate } from 'util';
-import blame from './user';
+import blame from './blame';
 
 export default deprecate(
   app => app.loopback.modelBuilder.mixins.define('Blame', blame), 

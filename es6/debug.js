@@ -1,3 +1,3 @@
 import debug from 'debug';
 
-export default (name = 'user') => debug(`loopback:mixins:${name}`);
+export default (name = 'blame') => debug(`loopback:mixins:${name}`);

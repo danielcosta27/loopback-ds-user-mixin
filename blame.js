@@ -83,4 +83,4 @@ exports.default = function (Model) {
 };
 
 module.exports = exports.default;
-//# sourceMappingURL=user.js.map
+//# sourceMappingURL=blame.js.map

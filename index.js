@@ -6,14 +6,14 @@ Object.defineProperty(exports, "__esModule", {
 
 var _util = require('util');
 
-var _user = require('./user');
+var _blame = require('./blame');
 
-var _user2 = _interopRequireDefault(_user);
+var _blame2 = _interopRequireDefault(_blame);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = (0, _util.deprecate)(function (app) {
-  return app.loopback.modelBuilder.mixins.define('Blame', _user2.default);
+  return app.loopback.modelBuilder.mixins.define('Blame', _blame2.default);
 }, 'DEPRECATED: Use mixinSources');
 
 
