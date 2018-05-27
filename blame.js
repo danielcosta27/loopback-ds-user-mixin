@@ -30,7 +30,7 @@ exports.default = function (Model) {
         required: false,
         validateUpsert: false, // default to turning validation off
         silenceWarnings: false,
-        dsName: null
+        type: 'string'
     }, bootOptions);
 
     debug('options', options);
@@ -44,7 +44,8 @@ exports.default = function (Model) {
         warn(options, 'Upserts for ' + Model.pluralModelName + ' will fail when\n          validation is turned on and time stamps are required');
     }
 
-    var type = !options.dsName ? 'string' : Model.app.datasources[options.dsName].connector.getDefaultIdType();
+    //const type = !options.dsName ? 'string' : Model.app.datasources[options.dsName].connector.getDefaultIdType();
+    var type = options.type;
 
     Model.defineProperty(options.createdBy, {
         type: type,
