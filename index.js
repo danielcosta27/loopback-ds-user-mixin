@@ -13,7 +13,7 @@ var _user2 = _interopRequireDefault(_user);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = (0, _util.deprecate)(function (app) {
-  app.loopback.modelBuilder.mixins.define('Blame', _user2.default);
+  return app.loopback.modelBuilder.mixins.define('Blame', _user2.default);
 }, 'DEPRECATED: Use mixinSources');
 
 
