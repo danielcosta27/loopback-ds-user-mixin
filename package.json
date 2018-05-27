@@ -1,6 +1,6 @@
 {
   "name": "loopback-ds-user-mixin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A mixin to automatically generate created by and updated by attributes for Loopback models",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mbenedettini/loopback-ds-user-mixin.git"
+    "url": "https://github.com/danielcosta27/loopback-ds-user-mixin.git"
   },
   "babel": {
     "presets": [
